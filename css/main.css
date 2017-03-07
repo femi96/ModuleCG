@@ -1,0 +1,110 @@
+/* CSS declarations go here */
+
+@font-face {font-family: Raleway; src: url('/fonts/Raleway-Light.ttf') format('truetype'); }
+
+body{
+	font-family: Raleway;
+	background-color: #000;
+	color: #eee;
+	margin: 0px;
+	font-size: 14px;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+/*Header CSS*/
+.header{
+	overflow: hidden;
+	border-bottom: 1px solid #555;
+	background-color: #222;
+}
+	.h_title{
+		margin: 8px auto 4px auto;
+		max-width: 800px;
+
+		font-size: 30px;
+		color: #57ffe3;
+	}
+	.h_menu_boarder{
+		float: left;
+		width: calc(50% - 404px);
+		height: 24px;
+		border-top: 1px solid #555;
+		border-bottom: 1px solid #555;
+	}
+	.h_menu{
+		float: left;
+		margin: 0px 4px 8px 4px;
+		padding: 0px;
+		max-width: 800px;
+
+		font-size: 18px;
+		color: #828282;
+		text-align: center;
+	}
+		.h_menuItem
+		{
+			display: inline-block;
+			margin: 0px 0px 0px 0px;
+			padding: 0px;
+			width: 156px;
+			border-top: 1px solid #555;
+			border-bottom: 1px solid #555;
+			transition: all ease-in-out 0.4s;
+
+			font-size: 20px;
+			cursor: pointer;
+		}
+		.h_menuItem:hover
+		{
+			border-color: #57ffe3;
+			color: #57ffe3;
+		}
+		#act{
+			border-color: #57ffe3;
+			color: #57ffe3;
+		}
+
+/*Wrapper CSS*/
+.wrap{
+	overflow: hidden;
+	height: calc(100% - 82px);
+	margin: 0px auto 0px auto;
+	max-width: 800px;
+}
+.w_scroll{
+	overflow-y: scroll;
+	height: 100%;
+	width: 100%;
+	padding-right: 60px;
+}
+
+/*Content CSS*/
+.content{
+	overflow: hidden;
+	max-width: 800px;
+}
+/*	.content a{
+		font-style: italic;
+	}*/
+	.content a:hover{
+		color: #57ffe3;
+	}
+
+/*Footer CSS*/
+.footer{
+	overflow: hidden;
+	margin-top: 40px;
+	margin-bottom: 20px;
+
+	text-align: center;
+	/*color: #828282;*/
+}
+	.f_text{
+		line-height: 26px;
+	}
+	.f_text a:hover	{
+		color: #57ffe3;
+	}

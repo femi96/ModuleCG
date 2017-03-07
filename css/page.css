@@ -1,0 +1,38 @@
+/*Content CSS*/
+
+/*Route CSS*/
+.c_route{
+	margin: 4px 0px 12px 0px;
+	font-size: 20px;
+}
+
+/*Block CSS*/
+.c_block{
+	margin: 0px 0px 8px 0px;
+}
+
+/*Side-Title CSS*/
+.c_side{
+	font-size: 20px;
+}
+
+/*Text CSS*/
+.c_text{
+	text-indent: 16px;
+	margin: 4px 0px 4px 0px;
+}
+
+/*List CSS*/
+.c_list{
+}
+	.c_list ul{
+		margin: 0px;
+	}
+
+/*Color CSS*/
+.c_red{
+	color: #FF6357;
+}
+.c_blue{
+	color: #856CFF;
+}

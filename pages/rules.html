@@ -1,0 +1,162 @@
+<head>
+	<title>ModuleCG | Rules</title>
+</head>
+
+<body>
+	<div class="c_route">>M:\Module\Rules\</div>
+
+	<div class="c_block">
+		<div class="c_side">Programs & Functions</div>
+		<div class="c_text">Card breakdown</div>
+		<div class="c_text">Image goes here</div>
+	</div>
+
+	<div class="c_block">
+		<div class="c_side">Terms</div>
+		<div class="c_list">
+			<ul>
+				<li><b>Functions</b> - A type of card. Equipped to units or used individually.</li>
+				<li><b>Program</b> - A type of card. A unit used in play.</li>
+			</ul>
+			<br>
+			<ul>
+				<li><b>Process</b> - Action taken by a Program. Usually the resolution of a Function.</li>
+				<li><b>Execution</b> - Player called program use. Executions take place after the process they are activated during finishes.</li>
+				<li><b>Activated</b> - Program state. Face-up. Programs only start processes while active.</li>
+				<li><b>Deactivated</b> - Program state. Face-down. Programs can maintain nulls, but cannot start processes.</li>
+			</ul>
+			<br>
+			<ul>
+				<li><b>Compiler Processing Units(CPU)</b> - These are required to play cards.</li>
+				<li><b>Reputation(REP)</b> - The Health of each player.</li>
+				<li><b>Integrity(INT)</b> - The Health of each program.</li>
+				<li><b>Resistance(RES)</b> - Reduce all incoming damage by this amount.</li>
+				<li><b>Charge(CHA)</b> - Increase all outgoing damage by this amount.</li>
+				<li><b>Speed(SPD)</b> - Programs with higher speed are called first.</li>
+				<li><b>Immune(IMMUNE)</b> - Cannot take damage or be destroyed.</li>
+			</ul>
+			<br>
+			<ul>
+				<li><b>Null</b> - When Function does not fit the requirements of play. Null functions are destroyed when revealed. Having a null  revealed lowers reputation by 1.</li>
+				<li><b>Uncalled(Bluff)</b> - When a Function is equipped to a Program without a slot, or without the proper Properties.</li>
+				<li><b>Unfinished(Bluff)</b> - When a Function is played face down without spending the required CPU.</li>
+			</ul>
+			<br>
+			<ul>
+				<li><b>Height</b> - The position of a program. New programs are above previous programs. On the board, left is lowest, and right is the highest.</li>
+				<li><b>Base Program(Bottom)</b> - A player's lowest program.</li>
+				<li><b>Surface Program(Top)</b> - A player's highest program.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">Goals</div>
+		<div class="c_list">
+			<ul>
+				<li>Reduce the opposing player's Reputation to 0 at the end of a Cycle.</li>
+				<li>Have the most Reputation after 10(Standard) Cycles.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">How to Play</div>
+		<div class="c_list">
+			<ul>
+				<li>Player Decks of 24. Limit of 3 copies of a card per deck.</li>
+				<li>Starting Reputation of 10.</li>
+				<li>Both Draw a starting hand of 7.</li>
+				<li>Flip a coin? to decide Player Order and starting player.</li>
+				<li>Begin looping through cycles(turns).</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Cycle Starts.</li>
+				<li>All players draw 1 card.</li>
+				<li>Set player <b>CPU(Compiler Processing Units)</b> equal to the cycle number, up to a limit of 6.</li>
+				<li>Loop through players' <b>Main Phases</b>, in Player Order.</li>
+				<li>Loop through players' <b>Activation Phases</b>, in Player Order.</li>
+				<li>Loop through players' <b>Targeting Phases</b>, in Player Order.</li>
+				<li>Begin <b>Execution Phases</b>.</li>
+				<li>Players without programs lose REP equal to the cycle number.</li>
+				<li>Start next cycle with a new Player Order. The first player last turn is moved to the last player this turn, and all other palyers move up in priority.</li>
+			</ul>
+			<br>
+			<ul>
+				<li>Cycle limit is can be variable but standard is 10 for 2 players, and 16 for 4 players.</li>
+				<li>A player wins by having the most reputation by the end of all cycles, or by reducing all opposing player's Reputation to 0. When a player has a Reputation of 0, they no longer participate in the game.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">Main Phase</div>
+		<div class="c_list">
+			<ul>
+				<li>Players spend CPU to play Programs and Equip Functions.</li>
+				<li>Programs can be played face up or face down. If a Program is face down, all of it's functions must also be face down. When a program is played, it is positioned above (to the right of) a player's other programs.</li>
+				<li>Support Functions must always face the same way as their programs.</li>
+				<li>A program can be overloaded with functions, having more functions than slots. In this case, when revealed, the null functions are destroyed and the player takes reputation damage.</li>
+				<li>CPU can be added to face down cards, allowing players to Finish an Unfinished program.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">Activation Phase</div>
+		<div class="c_list">
+			<ul>
+				<li>Players can choose to flip their Programs face up, Activating them.</li>
+				<li>Players can choose to flip their Programs face down, Deactivating them.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">Targeting Phase</div>
+		<div class="c_list">
+			<ul>
+				<li>Only occurs when there are more than 2 players.</li>
+				<li>Players choose who their target player will be for the <b>Execution Phase</b>.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">Execution Phase</div>
+		<div class="c_list">
+			<ul>
+				<li>Constructors resolve based on <b>Order of Operations</b>.</li>
+				<li>Then, Calls resolve based on <b>Order of Operations</b>.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="c_block">
+		<div class="c_side">Order of Operations</div>
+		<div class="c_list">
+			<ul>
+				<li>Cards do not take effect unless Active (face up).</li>
+				<li>Each player, in Player Order, take alternating turns resolving Functions.</li>
+				<li>For each player, the lowest active Program is selected, and its Functions are resolved in order of lowest to highest. After a Program is complete, the next lowest Program is selected.</li>
+			</ul>
+			<br>
+		</div>
+		<div class="c_text">Example: Players Red and Blue. Red goes first with programs A (2 Functions) and B (2 Functions), and Blue goes second with programs C (1 Function) and D (3 Functions). Order of Function resolution would be as follows.</div>
+		<div class="c_list">
+			<ul>
+				<li class="c_red">Red_A_1</li>
+				<li class="c_blue">Blue_C_1</li>
+				<li class="c_red">Red_A_2</li>
+				<li class="c_blue">Blue_D_1</li>
+				<li class="c_red">Red_B_1</li>
+				<li class="c_blue">Blue_D_2</li>
+				<li class="c_red">Red_B_2</li>
+				<li class="c_blue">Blue_D_3</li>
+			</ul>
+			<br>
+		</div>
+		<div class="c_list">
+			<ul>
+				<li>In the case of a Program being activated during the <b>Execution Phase</b>, the player's current Program does not change until the previous Program is completed.</li>
+				<li>Higher Speed Programs activate earlier. <b>Order of Operations</b> applies to two Programs of the same Speed.</li>
+				<li>Functions are flipped face up when activated. All Functions of Active Programs must be activated and resolved.</li>
+				<li>Executions can be used during this time. When a player uses an Execution from their hand, the effect takes place after the current Program's current Process.</li>
+			</ul>
+		</div>
+	</div>
+</body>

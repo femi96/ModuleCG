@@ -1,0 +1,42 @@
+<html lang="en" ng-app="modApp">
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/page.css">
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="node_modules/angular-route/angular-route.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+
+	<body ng-controller="modController">
+		<!-- Header -->
+		<div class='header'>
+			<div class="h_title"><a href='/#!/'>Module_/CG)</a></div>
+			<div class='h_menu_boarder'></div>
+			<ul class='h_menu'>
+				<a href='/#!/about'><li class='h_menuItem' id='{{routeMatch("/about")}}'>About</li></a>
+				<a href='/#!/rules'><li class='h_menuItem' id='{{routeMatch("/rules")}}'>Rules</li></a>
+				<a href='/#!/cards'><li class='h_menuItem' id='{{routeMatch("/cards")}}'>Cards</li></a>
+				<a href='/#!/download'><li class='h_menuItem' id='{{routeMatch("/download")}}'>Download</li></a>
+				<a href='/#!/team'><li class='h_menuItem' id='{{routeMatch("/team")}}'>Team</li></a>
+			</ul>
+			<div class='h_menu_boarder'></div>
+		</div>
+
+		<!-- Wrapper -->
+		<div class='wrap'><div class='w_scroll'>
+			<!-- Content -->
+			<div class='content'>
+				<div ng-view></div>
+			</div>
+
+			<!-- Footer -->
+			<div class='footer'>
+				<div class='f_text'>More @ <a href='http://www.outerish.net/#!/'>OuterIshIndex</a></div>
+			</div>
+		</div></div>
+	
+	</body>
+
+</html>
