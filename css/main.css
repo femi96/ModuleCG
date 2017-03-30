@@ -4,7 +4,7 @@
 
 body{
 	font-family: Raleway;
-	background-color: #000;
+	background-color: #111;
 	color: #eee;
 	margin: 0px;
 	font-size: 14px;
@@ -23,6 +23,7 @@ a{
 	.h_title{
 		margin: 8px auto 4px auto;
 		max-width: 800px;
+		font-weight: 700;
 
 		font-size: 30px;
 		color: #57ffe3;
@@ -33,6 +34,7 @@ a{
 		height: 24px;
 		border-top: 1px solid #555;
 		border-bottom: 1px solid #555;
+		background-color: #282828;
 	}
 	.h_menu{
 		float: left;
@@ -52,6 +54,7 @@ a{
 			width: 156px;
 			border-top: 1px solid #555;
 			border-bottom: 1px solid #555;
+			background-color: #282828;
 			transition: all ease-in-out 0.4s;
 
 			font-size: 20px;
@@ -72,7 +75,10 @@ a{
 	overflow: hidden;
 	height: calc(100% - 82px);
 	margin: 0px auto 0px auto;
-	max-width: 800px;
+	padding: 0px 12px;
+	max-width: 776px;
+	/*border-left: 1px solid #555;*/
+	/*border-right: 1px solid #555;*/
 }
 .w_scroll{
 	overflow-y: scroll;
